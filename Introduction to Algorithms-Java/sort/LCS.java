@@ -1,7 +1,10 @@
 package sort;
 
 public class LCS {
-
+	/**
+	 Longest common subsequence
+	 最长公共子序列问题
+	 */
 	public int[][] LCS_Length(char[] X,char[] Y){
 		int m=X.length;
 	    int n=Y.length;

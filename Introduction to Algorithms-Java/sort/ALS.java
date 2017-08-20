@@ -2,6 +2,10 @@ package sort;
 
 public class ALS {
 
+	/**
+	 Assembly-lines scheduling 
+	 装配线问题
+	 */
     public int[][] Fastest_Way(int[] a1,int[] a2,int[] t1,int[] t2,
     		int e1,int e2,int x1,int x2,int n){
     	int f1[]= new int[n];

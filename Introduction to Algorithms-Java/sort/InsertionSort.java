@@ -1,16 +1,19 @@
 package sort;
 import java.util.Random;
 public class InsertionSort {
-
+	/**
+	 Insertion
+	 插入排序
+	 */
 	public void insertion(int[] a){
 		int i,j;
 		int temp;
 		for ( i=1; i<a.length; ++i){
 			if (a[i] < a[i-1]){
-				temp = a[i];       
+				temp = a[i];            // 复制为监视哨
 				for ( j=i-1; j>=0&&temp < a[j];  -- j )
-					a[j+1] = a[j];
-				a[j+1] = temp;
+					a[j+1] = a[j];        // 记录后移
+				a[j+1] = temp;// 插入到正确位置	
 			}
 		}
 	}
